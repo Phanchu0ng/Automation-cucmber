@@ -38,7 +38,7 @@ public class driverAction {
 	}
 
 	public void clickElementWithvallueAttibute(String typeElement, String attribute, String value) {
-		By by = By.xpath("//" + typeElement + "[@" + attribute + "='" + value + "']");
+		By by = By.xpath("//div/form//" + typeElement + "[@" + attribute + "='" + value + "']");
 		driver.findElement(by).click();
 
 	}
